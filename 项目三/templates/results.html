@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>您发布的信息如下：</h2>
+
+
+<table>
+<tr><td>title:</td><td>{{ title }}</td></tr>
+<tr><td>type:</td><td>{{ type }}</td></tr>
+<tr><td>description:</td><td>{{ description }}</td></tr>
+<tr><td>place:</td><td>{{ place }}</td></tr>
+<tr><td>img:</td><td><img src="{{ img }}" alt="" style="width: 100px;height: 100px"></td></tr>
+</table>
+<p>恭喜你！发布成功！</p>
+
+{% endblock %}

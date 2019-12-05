@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4'>
+<table>
+<p>输入你的要发布的新闻：</p>
+<tr><td>标题:</td><td><input name='title' type='TEXT' width='60' value='填入新闻标题'></td></tr>
+<tr><td>分类:</td><td><input name='type' type='TEXT' value=''></td></tr>
+<tr><td>新闻详情:</td><td><input name='description' type='TEXT' width='60'></td></tr>
+<tr><td>地点:</td><td><input name='place' type='TEXT' value=''></td></tr>
+<tr><td>图片:</td><td><input name='img' type='TEXT' value=''></td></tr>
+</table>
+<p>输入完成，你可以进行发布啦</p>
+<p><input value='Do it!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
